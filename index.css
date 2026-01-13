@@ -193,3 +193,36 @@ nav {
         gap: 20px;
     }
 }
+
+@keyframes fadeInMove {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Starts slightly lower */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutMove {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px); /* Moves up while fading out */
+    }
+}
+
+/* 2. Apply Fade-In to the card automatically on load */
+.portfolio-card {
+    /* Existing styles remain... */
+    animation: fadeInMove 0.6s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* 3. The class JavaScript will add when leaving the page */
+.portfolio-card.fade-out {
+    animation: fadeOutMove 0.5s ease-in forwards;
+}
