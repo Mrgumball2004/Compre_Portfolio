@@ -72,13 +72,11 @@ nav {
     border-radius: 2px;
 }
 
-/* --- Page Transitions --- */
 
-/* 1. The Animation Definitions */
 @keyframes fadeInMove {
     from {
         opacity: 0;
-        transform: translateY(20px); /* Starts slightly lower */
+        transform: translateY(20px); 
     }
     to {
         opacity: 1;

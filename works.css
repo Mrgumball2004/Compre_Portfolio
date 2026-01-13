@@ -32,7 +32,6 @@
 .work-img {
     height: 180px;
     width: 100%;
-    /* In real use, put an <img src="..."> here */
     background-color: #eee; 
 }
 
@@ -49,4 +48,4 @@
     font-size: 0.9rem;
     color: #3b82f6;
     font-weight: 600;
-}
+}   
